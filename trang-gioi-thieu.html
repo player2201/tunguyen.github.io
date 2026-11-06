@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Tu – Trang giới thiệu</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@700;800&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#eef1f4; --ink:#14202b; --muted:#53626f; --line:#cdd5dc;
+  --layer-a:#2447e0; --layer-b:#9fb2f5; --paint:#e0a21b;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+:root:not([data-theme="light"]){color-scheme:light}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#10161c; --ink:#e8edf2; --muted:#9aa8b5; --line:#2a3541;
+    --layer-a:#7f9bff; --layer-b:#2c3f8f; --paint:#f0b83a; color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#10161c; --ink:#e8edf2; --muted:#9aa8b5; --line:#2a3541;
+  --layer-a:#7f9bff; --layer-b:#2c3f8f; --paint:#f0b83a; color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font-family:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  font-size:1.0625rem;line-height:1.65}
+main{max-width:44rem;margin:0 auto;padding:4rem 1.5rem 5rem}
+h1,h2{font-family:"Bricolage Grotesque","Arial Black",system-ui,sans-serif;line-height:1.05;margin:0}
+h1{font-size:clamp(6rem,30vw,11rem);font-weight:800;letter-spacing:-.04em;
+  background:repeating-linear-gradient(0deg,var(--layer-a) 0 7px,var(--layer-b) 7px 10px);
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+  padding-bottom:.08em}
+.lede{font-size:1.25rem;max-width:34rem;margin:1rem 0 0}
+section{margin-top:3.5rem;padding-top:1.5rem;border-top:1px solid var(--line)}
+h2{font-size:1.6rem;font-weight:700;margin-bottom:.75rem}
+p{margin:.5rem 0;max-width:38rem}
+dl{margin:0;display:grid;grid-template-columns:1fr;gap:1.1rem}
+dt{font-weight:500}
+dd{margin:.15rem 0 0;color:var(--muted);max-width:38rem}
+ul{padding-left:1.2rem;margin:.5rem 0}
+li{margin:.3rem 0}
+a{color:var(--layer-a);text-underline-offset:.2em}
+a:focus-visible{outline:3px solid var(--paint);outline-offset:3px;border-radius:2px}
+.swatch{display:inline-block;width:.8em;height:.8em;background:var(--paint);border-radius:50%;margin-right:.5em}
+</style>
+</head>
+<body>
+<main>
+  <h1>Tu</h1>
+  <p class="lede">Mình thích tự tay làm ra đồ vật: in 3D, dựng mô hình trong Blender và sơn từng chiếc mini nhỏ.</p>
+
+  <section>
+    <h2>Về mình</h2>
+    <p>Xin chào, mình là Tu. Mình đọc được bản vẽ kỹ thuật và quen làm việc với số liệu, nên mình hay nghĩ về cách một thứ được làm ra từng bước một.</p>
+    <p>Trang này là nơi mình giới thiệu những gì mình làm và cách liên lạc với mình.</p>
+  </section>
+
+  <section>
+    <h2>Mình làm gì</h2>
+    <dl>
+      <div><dt>In 3D</dt><dd>Thiết kế và in các mô hình nhỏ, thử vật liệu và cài đặt cho từng chi tiết.</dd></div>
+      <div><dt>Dựng mô hình bằng Blender</dt><dd>Tạo nhân vật và vật thể để in hoặc để dùng trong dự án game của riêng mình.</dd></div>
+      <div><dt>Sơn mini</dt><dd>Sơn tay các figure in 3D, từ lớp nền đầu tiên đến chi tiết cuối cùng.</dd></div>
+    </dl>
+  </section>
+
+  <section>
+    <h2>Kỹ năng</h2>
+    <ul>
+      <li>Đọc bản vẽ kỹ thuật</li>
+      <li>Excel và Microsoft 365</li>
+      <li>Blender và in 3D</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Liên hệ</h2>
+    <p><span class="swatch" aria-hidden="true"></span>Email: <a href="mailto:ten-cua-ban@example.com">ten-cua-ban@example.com</a></p>
+  </section>
+</main>
+</body>
+</html>
